@@ -528,7 +528,7 @@ h6 {
     @media (max-width: 600px) {
       .card {
         padding: 15px;
-        font-size: 14px;
+        font-size: 17px;
         margin: auto;
       }
     }
@@ -1144,8 +1144,8 @@ section,
 }
 
 .about .our-story {
-  font-size: 17px;
-  text-align: left;
+  font-size: 16px;
+  text-align: justify;
   padding: 40px;
   background-color: color-mix(in srgb, var(--default-color), transparent 96%);
 }
