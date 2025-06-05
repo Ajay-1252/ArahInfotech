@@ -402,7 +402,7 @@ document.getElementById("emailForm").addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
 
-    await fetch("https://script.google.com/macros/s/AKfycbyrglhkBCehecAoq8vzAecDqPC--IZYmp6YmPIH4I78PrZhVY5sH4Kz7ByrdpPVxB-_-g/exec", {
+    await fetch("https://script.google.com/macros/s/AKfycbydE5sbfroBIE8QO2r5zCCksRQlWAqrL4xOZitlqemzoZbLy3WtZagOepZm79_UVuMpIg/exec", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
