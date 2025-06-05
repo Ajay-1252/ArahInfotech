@@ -2751,7 +2751,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+  background: color-mix(in srgb, var(--accent-color) 90%, black 95%);
 }
 
 /*--------------------------------------------------------------

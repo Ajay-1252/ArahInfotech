@@ -220,9 +220,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // auto run slider
-let refreshInterval = setInterval(() => {
+const next = document.querySelector('#next');
+if (next) {
+  let refreshInterval = setInterval(() => {
     next.click();
-}, 5000)
+  }, 5000);
+} else {
+  console.warn('Next button not found!');
+}
 function showSlider(){
     // remove item active old
     let itemActiveOld = document.querySelector('.slider .list .item.active');
@@ -424,4 +429,30 @@ document.getElementById("emailForm").addEventListener("submit", async (e) => {
       document.getElementById("applyForm").style.display = "none";
     }
 
+    //Contact Form
+     document.getElementById('contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault(); // Prevent normal form submission
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        alert("Thank you! Your message has been sent.");
+        form.reset(); // Optional: reset form after success
+      } else {
+        alert("Oops! Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Error submitting the form. Check your internet connection.");
+    }
+  });
 
