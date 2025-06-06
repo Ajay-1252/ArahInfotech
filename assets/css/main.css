@@ -1144,7 +1144,7 @@ section,
 }
 
 .about .our-story {
-  font-size: 16px;
+  font-size: 15px;
   text-align: justify;
   padding: 40px;
   background-color: color-mix(in srgb, var(--default-color), transparent 96%);
@@ -1152,6 +1152,7 @@ section,
 
 @media (min-width: 991px) {
   .about .our-story {
+    text-align: left;
     padding-right: 35%;
   }
 }
